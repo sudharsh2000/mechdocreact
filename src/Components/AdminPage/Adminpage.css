@@ -1,0 +1,49 @@
+.admin-container{
+
+}
+.admin-list{
+    display: flex
+;
+    margin: 2rem;
+    background-color: #b6d3b6;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    justify-content: center;
+    align-items: center;
+}
+.input-container{
+margin-left: 4rem;
+
+}
+.Username-input{
+    min-height: 2.5rem;
+    min-width: 21rem;
+   
+   padding: 0rem 1rem;
+   border-radius: .3rem;
+}
+.noedit{
+     background-color: #2e8b5700;
+     border: none;
+}
+.edit{
+    background-color: white;
+    border:  2px solid black;
+}
+.btn-container{
+margin-left: 13rem;
+}
+.btn-edit{
+    margin: 0rem 1.5rem;
+    min-width: 6rem;
+    background-color: #73a3a8;
+}
+.btn-delete{
+        margin: 0rem 1.5rem;
+    min-width: 6rem;
+    background-color: #a87373;
+}
+.btn-save,.btn-clear{
+margin: 0rem 1rem;
+min-width: 7rem;
+}

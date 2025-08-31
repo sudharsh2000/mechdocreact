@@ -1,0 +1,80 @@
+.main-card {
+     width: 94%;
+    max-width: 663px;       /* Center limit for desktop */
+  min-height: 35rem;
+  margin: 2rem auto;           /* Center horizontally */
+  background-color: #746b6b17;
+  display: flex;
+  flex-direction: column;      /* Mobile: stacked layout */
+  align-items: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card1 {
+  margin-bottom: 1.5rem;
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.card1,.card2,.card3{
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+}
+.card3{
+      padding: 0rem 13rem;
+}
+.inputcontainer {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.inputcontainer input {
+  width: 100%;                 /* Always responsive */
+  max-width: 400px;            /* Desktop limit */
+  min-height: 3rem;
+  margin: 0.5rem 0;
+  border-radius: 0.5rem;
+  border: 1px solid grey;
+  padding: 0 1rem;
+}
+
+.inputcontainer label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(111, 6, 6);
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  object-fit: cover;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+/* --- Responsive Desktop Layout --- */
+@media (min-width: 768px) {
+  .main-card {
+    flex-direction: column;        /* Side by side */
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 2rem;
+  }
+
+  .card1 {
+    margin-right: 2rem;
+  }
+
+  .inputcontainer {
+    max-width: 500px;
+  }
+}

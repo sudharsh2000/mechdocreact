@@ -1,0 +1,40 @@
+.signup-home{
+   display: flex
+;
+    height: 100%;
+    /* flex-wrap: wrap; */
+    /* align-content: center; */
+    justify-content: space-around;
+    /* padding: 11rem 39rem; */
+    align-items: center;
+    background-color: #faebd7ab;
+}
+.user-form{
+          display: flex
+;
+    flex-direction: column;
+    background-color: #0000002e;
+    padding: 2rem 5rem;
+    max-width: 39rem;
+    border-radius: 1rem;
+}
+.user-form h2{
+    color: rgb(129, 5, 5);
+    font-weight: bold;
+}
+.user-form label{
+    color: red;
+    font-size: medium;
+}
+.input-username,.input-password,.input-cpass,.input-mobile{
+     min-width: 26rem;
+    min-height: 3rem;
+    border-radius: 0.6rem;
+    border: none;
+    padding: 0rem 1.2rem;
+    outline: none;
+    margin: 2rem 0rem;
+}
+.signup-btn{
+    background-color: rgb(145, 225, 145);
+}
