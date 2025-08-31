@@ -3,7 +3,12 @@ import { jwtDecode } from "jwt-decode";
 import { useSelector } from "react-redux";
 import { store } from "./store";
 
-export const homeapi = "http://localhost:8000/api/";
+const isDev = !process.env.NODE_ENV || process.env.NODE_ENV === "development";
+
+// Backend URL: local for dev, Render URL for production
+export const homeapi = isDev
+  ? "http://localhost:8000/api/"
+  : "https://mechdocdjango.onrender.com/api/";
 export const loginapi = homeapi+"login/";
 export const signupapi = homeapi+"signup/";
 export const gettokenapi =  "token/";
